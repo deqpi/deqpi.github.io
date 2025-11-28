@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Version 1.4.0 - The Filter They Forgot</title>
+    <link rel="stylesheet" href="changelog-styles.css">
+  </head>
+  <body>
+    <div class="container" role="main">
+      <h1>Version 1.4.0 Changelog</h1>
+      <p class="version-date" style="text-align: center; margin-bottom: 40px;">Released on November 17, 2025</p>
+
+      <h2>Added</h2>
+      <ul>
+        <li>Added data origin selection, between the original page (downloaded from the roblox server) and the local one (elements already visible on the page), with an option to connect both.</li>
+        <li>Added option to filter lists by original page description.</li>
+        <li>Added "Select your list" choice memory to simplify the creation of large lists.</li>
+        <li>Added lazy loading for the settings repository; after 10000 entries per load, a "Continue rendering" button will appear to prevent freezing on very large lists.</li>
+        <li>Added a button to create new lists directly from the repository view.</li>
+        <li>Added real-time color preview when changing highlight color, allowing more precise adjustments.</li>
+        <li>Added normalized cache for previously processed titles to reduce CPU load by distributing tasks to RAM (cache resets on page refresh and does not occupy disk space).</li>
+        <li>Added native Light Mode (based on browser preferences).</li>
+        <li>Added native High Contrast Mode (based on browser preferences).</li>
+        <li>Added native Reduced Motion Mode for users sensitive to animations (based on browser preferences).</li>
+        <li>Added Shift+Click shortcut for quick word removal in the repository.</li>
+        <li>Added sticky header to the repository to improve navigation in large lists.</li>
+        <li>Added ARIA coverage improvements; voice assistants now announce filtering results and UI feedback.</li>
+      </ul>
+      
+      <h2>Improved</h2>
+      <ul>
+        <li>Completely re-architected filtering engine, achieving 60-73% efficiency gains across varying filter states.</li>
+        <li>Changed the exported list format from folders to ZIP archives. (You can convert your old exported lists <a href="https://deqpi.github.io/thefiltertheyforgot/converter/" target="_blank" rel="noopener">here</a>.)</li>
+        <li>Improved overall UI performance and responsiveness.</li>
+        <li>Improved user feedback for list operations (extension will now notify when items are added or removed).</li>
+        <li>Improved performance statistics handling and reduced risk of memory leaks.</li>
+        <li>Improved translation coverage and refined phrasing to prevent layout glitches caused by text length.</li>
+        <li>Improved performance monitor readability and added RAM usage info for cache, along with a guide on interpreting results.</li>
+        <li>Improved security through multiple internal fixes and better stability.</li>
+        <li>Adjusted extension logo to better match the current UI theme.</li>
+      </ul>
+      
+      <h2>Fixes</h2>
+      <ul>
+        <li>Fixed an issue where rating filtering could still check tiles even when disabled.</li>
+        <li>Fixed incorrect tile highlighting on language-prefixed pages (e.g. /de/home, /es/charts).</li>
+        <li>Fixed a bug where the visual menu button would overlap with the category dropdowns in the charts page.</li>
+        <li>Fixed several minor translation inconsistencies.</li>
+      </ul>
+      
+      <h2>List</h2>
+      <ul>
+        <li>The base list has been updated from October 17, 2025, to November 17, 2025.</li>
+      </ul>
+
+      <div class="back-link">
+        <a href="index.html">&larr; Back to Changelog Directory</a>
+      </div>
+    </div>
+    <footer>&copy; deqpi All rights reserved.</footer>
+  </body>
+</html>

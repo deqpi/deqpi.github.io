@@ -1,3 +1,3 @@
-I thought someone might be looking for my other work someday, so I collected it here. 
+I thought someone might look for my other works someday, so I’ve gathered them here.
 
-~ deqpi
+~deqpi
